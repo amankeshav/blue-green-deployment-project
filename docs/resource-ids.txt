@@ -1,0 +1,120 @@
+=========================================
+Blue-Green Deployment Project Resources
+=========================================
+
+Region
+------
+ap-south-1
+
+=========================================
+
+VPC
+---
+
+Name
+BlueGreen-VPC
+
+VPC ID
+vpc-043ee564b8349925f
+
+CIDR
+10.0.0.0/16
+
+=========================================
+
+Subnet A
+--------
+
+Name
+Public-Subnet-A
+
+Subnet ID
+subnet-08b4201a1d20a1bae 
+
+Availability Zone
+ap-south-1a
+
+CIDR
+10.0.1.0/24
+
+=========================================
+
+Subnet B
+--------
+
+Name
+Public-Subnet-B
+
+Subnet ID
+subnet-0d1951dcc77297680 
+
+Availability Zone
+ap-south-1b
+
+CIDR
+10.0.2.0/24
+
+=========================================
+
+Internet Gateway
+----------------
+
+IGW ID
+igw-0f09880e3851580ec
+
+=========================================
+
+Route Table
+-----------
+
+Name
+Public-Route-Table
+
+Route Table ID
+rtb-0af15158c85af2dcf
+
+Associated Subnets
+subnet-08b4201a1d20a1bae
+subnet-0d1951dcc77297680
+
+Routes
+10.0.0.0/16 -> local
+0.0.0.0/0 -> igw-0f09880e3851580ec
+
+=========================================
+
+Application Load Balancer
+-------------------------
+
+Target Group Blue
+
+Target Group Green
+
+Load Balancer ARN
+
+=========================================
+
+Security Groups
+---------------
+
+ALB Security Group
+
+Web Security Group
+
+=========================================
+
+EC2 Instances
+-------------
+
+Blue Instance ID
+
+Green Instance ID
+
+=========================================
+
+Route53
+-------
+
+Hosted Zone ID
+
+Domain Name
